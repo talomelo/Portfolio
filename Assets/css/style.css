@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: azure;
+    scroll-behavior: smooth;
+}
+
+header .container-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+}
+
+/* Menu */
+nav .menu-option {
+    margin-right: 40%;
+}
+
+nav .menu-option ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-option li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+    padding-right: 14%;
+}
+
+ul li:hover {
+    text-decoration: underline;
+    color: azure;
+}
+
+
+/* Sessão principal*/
+.container {
+    background-color: #3b5760;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15%;
+    background-image: url('../image/image_01.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+article {
+    position: absolute;
+    padding-top: 32%;
+}
+
+.title {
+    font-size: 30px;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: phrase 2s steps(12) infinite alternate, blenk 800ms steps(13) infinite normal;
+    border-right: 4px solid white;
+}
+
+/* Animation */
+@keyframes phrase {
+    from {
+        width: 0%;
+    } to {
+        width: 120%;
+    }
+}
+
+@keyframes blenk {
+    from {
+        border-color: black;
+    } to {
+        border-color: transparent;
+    }
+}
+
+/* Sobre */
+section .container-about {
+    height: 100vh;
+    background-color: #3b5760; 
+}
+
+section .talking-about p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: justify;
+    word-spacing: 0.7rem;
+    line-height: 40px;
+    padding: 100px 100px 40px 100px;
+    color: rgba(238, 233, 233, 0.8);
+    text-shadow: #0d1b20 0.3px 2px 0px;
+}
+
+.tech-icon {
+    padding: 0px 28px 0px 87px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-icon-html {
+    width: 17%;
+    display: inline-block;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    margin-right: 7%;
+    border-radius: 6%;
+}
+
+.box-icon-css {
+    width: 16%;
+    display: inline-block;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    margin-right: 7%;
+    border-radius: 6%;
+}
+
+.box-icon-js {
+    width: 19%;
+    display: inline-block;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    margin-right: 7%;
+    border-radius: 6%;
+}
+
+.box-icon-reactjs {
+    width: 21%;
+    display: inline-block;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    border-radius: 6%;
+}
+
+.tech-icon .fa-brands {
+    padding-left: 18%;
+    font-size: 10rem;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+}
+
+/* Habily */
+.container-ability {
+    height: 100vh;
+    background-color: #3b5760; 
+}
+
+.ability {
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+
+.ability-content {
+    padding: 20px;
+    background: #3b5760;
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+h3 {
+    color: rgba(238, 233, 233, 0.8);
+    text-shadow: #0d1b20 0.3px 2px 0px;
+}
+
+.ability-component p {
+    padding-top: 3px;
+    color: rgba(238, 233, 233, 0.8);
+    text-shadow: #0d1b20 0.3px 2px 0px;
+}
+
+.dic-html {
+    margin: 0px 20px 20px 20px;
+    padding-right: 40%;
+
+}
+
+.disk-html {
+    margin-right: 4%;
+}
+
+.dic-css {
+    margin: 0px 20px 20px 20px;
+    padding-left: 40%;
+    float: right;
+}
+
+.dic-js {
+    margin: 0px 20px 20px 20px;
+    padding-right: 40%;
+    float: left;
+}
+
+.dic-reactjs {
+    margin: 0px 20px 20px 20px;
+    padding-left: 40%;
+    float: right;
+}
+
+.dic-boost {
+    margin: 0px 20px 20px 20px;
+    padding-right: 40%;
+    float: left;
+}
+
+.dic-git {
+    margin: 0px 20px 20px 20px;
+    padding-left: 40%;
+    float: right;
+}
+
+/* Project */
+.container-project {
+    height: 100vh;
+    background-color: #3b5760;
+    padding-top: 5%;
+}
+
+.project-area {
+    margin: 0 25%;
+    height: 80%;
+    width: 53%;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    cursor: pointer;
+}
+
+.content {
+    height: 90%; /*576px*/
+    width: 96%; /*864px*/
+    margin: 0 2%;
+    padding-top: 5%;
+    overflow: hidden;
+    
+} 
+
+.navigation {
+    position: absolute;
+    display: flex;
+    top: 374%;
+    padding-left: 13%;
+}
+
+.bar {
+    width: 70px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    margin: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover {
+    background-color: azure;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.im1 {
+    padding-left: 3%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#slide6:checked ~ .s1 {
+    margin-left: -100%;
+}
+
+.description-project {
+    text-align: center;
+    padding-top: 2%;
+    color: azure;
+    font-weight: bold;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+}
+
+/* Contact */
+.container-contact {
+    height: 100vh;
+    background-color: #3b5760;
+    padding-top: 15%;   
+}
+
+.icons-contact {
+    text-align: center;
+    font-size: 7rem;
+}
+
+.box-contact {
+    display: flex;
+}
+
+.bloco1 {
+    margin: 0 10%;
+    height: 10%;
+    width: 12%;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.bloco2 {
+    margin: 0 10%;
+    height: 10%;
+    width: 12%;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.bloco3 {
+    margin: 0 10%;
+    height: 10%;
+    width: 12%;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.box-curriculum .curriculum {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 42%;
+}
+
+.curriculum {
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Rodapé*/
+.container-end {
+    height: 4vh;
+    background-color: #3b5760;
+}
+
+.footer-end h3 {
+    text-align: center;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+}
+
+/* menu mobile */
+.menu-mobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+
+}
+
+.mn-line {
+    border: 2px solid azure;
+    font-weight: 200;
+    text-shadow: #0d1b20 3.5px 3px 2px;
+    
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 0;
+} 
+
+/* Responsividade */
+@media screen and (max-width:1024px) {
+    /* Logo */
+    header .logo a {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    /*Menu-mobile*/
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+
+    /* Menu */
+    nav .menu-option ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        padding: 6%;
+        border: 2px solid azure;
+        text-shadow: #0d1b20 3.5px 3px 2px;
+        height: 100%;
+        margin: 1% 63%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: #3b5760;
+        text-shadow: #0d1b20 3.5px 3px 2px;
+        opacity: 0.8;
+        text-align: left;
+        border-radius: 15px;
+    }
+
+    .menu-option li:hover {
+        background-color: #3b5760;
+        text-decoration: underline;
+        color: black;
+    }
+
+
+    /* Imagem */
+    .image {
+        width: 23rem;
+        height: 26rem;
+    }
+
+    /* Animação - name */
+    article {
+        padding-top: 50%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    /* sobre */
+    section .talking-about p {
+        font-size: 1.2rem;
+        padding: 5rem 2rem;
+    }
+
+    .box-icon-html, .box-icon-css, .box-icon-css, .box-icon-js, .box-icon-reactjs {
+        width: 13%;
+    }
+
+    .tech-icon {
+        padding: 0% 4% 0% 12%;
+    }
+
+    .tech-icon .fa-brands {
+        padding: 1% 0 0 26%;
+        font-size: 5rem;
+    }
+
+    /* Habilidades */
+    .ability {
+        padding-top: 5%;
+    }
+
+    .project-area {
+        margin: 1% 18%;
+        width: 68%;
+    }
+
+    .navigation {
+        top: 372%;
+        padding-left: 16%;
+    }
+
+    .bar {
+        width: 65px;
+        height: 25px;
+    }
+
+    .description-project {
+        padding: 0;
+    }
+
+    /* Contato */
+    .bloco1, .bloco2, .bloco3 {
+        width: 20%;
+    }
+
+    .icons-contact {
+        font-size: 7rem;
+    }
+
+    .box-curriculum .curriculum {
+        margin: 15% 39%;
+    }
+}
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+   /* menu */
+   nav .menu-option ul {
+        margin: 0 52%;
+   }
+   
+    /* Home */
+    article {
+        padding-top: 68%;
+    }
+
+    /* sobre */
+    section .talking-about p {
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+
+    .tech-icon .fa-brands {
+        font-size: 6rem;
+        padding-left: 8%;
+    }
+
+    .box-icon-js {
+        width: 15%;
+    }
+
+    .box-icon-reactjs {
+        width: 18%;
+    }
+
+    /* habilidades */
+    .ability {
+        padding-top: 3rem;
+    }
+   
+    /* Projetos */
+    .container-project {
+        padding-top: 8%;
+    }
+
+    .navigation {
+    top: 374%;
+    padding: 0 10%;
+    }
+
+    .bar {
+        width: 60px;
+        height: 32px;
+    }
+
+    /* contato */
+    .box-contact {
+        padding-top: 12%;
+    }
+
+    .icons-contact {
+        font-size: 4rem;
+    }
+
+    .box-curriculum .curriculum {
+        margin: 18% 39%;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:480px) {
+    header .container-principal {
+        padding: 21px 20px;
+    }
+    
+    /* Logo */
+    header .logo a {
+        font-size: 1.3rem;
+    }
+
+    /* home */
+    .image {
+        width: 19rem;
+        height: 26rem;
+    }
+
+    article {
+        padding-top: 70%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    /* sobre */
+    section .talking-about p {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        padding: 9rem 3rem 3.5rem 3rem;
+    }
+
+    .tech-icon {
+        padding: 0 0 0 8%;
+    }
+
+    .tech-icon .fa-brands {
+        font-size: 7.8rem;
+        padding-left: 8%;
+    }
+
+    /* habilidades */
+    .ability {
+        padding-top: 8rem;
+    }
+
+    /* Projeto */
+    .project-area {
+        margin: 10% 10%;
+        height: 35rem;
+        width: 40rem;
+    }
+
+    .container-project {
+        padding-top: 3%;
+    }
+
+    .navigation {
+        top: 370%;
+        padding: 0 0 0 9%;
+    }
+
+    .bar {
+        width: 5rem
+    }
+
+    .description-project {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    /* Contato */
+    .container-contact {
+        padding-top: 25%;
+    }
+
+    .icons-contact {
+        font-size: 6rem;
+    }
+
+    .bloco1 {
+        margin: 0 5%;
+        width: 23%;
+        padding: 0;
+    }
+
+    .bloco2 {
+        margin: 0 5%;
+        width: 20%;
+        padding: 0;
+    }
+
+    .bloco3 {
+        margin: 0 5%;
+        width: 24%;
+        padding: 0;
+    }
+
+    .box-curriculum .curriculum {
+        margin: 22% 24%;
+    }
+
+    /*  footer */
+    .footer-end h3 {
+        font-size: 1rem;
+        padding: 6px 0 0 0;
+    }
+}
+
+@media screen and (max-width:479px) and (min-width:320px) {
+    /* sessão inicial */
+    header .logo a {
+        font-size: 1.5rem;
+    }
+    .image {
+        width: 11rem;
+        height: 17rem;
+    }
+
+    article {
+        padding-top: 110%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    /* menu */
+    nav .menu-option ul {
+        padding: 9%;
+        margin: 0.9rem 6rem;
+    }    
+
+    /* Sobre */
+    section .talking-about p {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        padding: 8rem 3rem 3rem 3rem;
+    }
+
+    .tech-icon .fa-brands {
+        font-size: 3rem;
+        padding-left: 12%;
+    }
+
+    .tech-icon {
+        padding: 0 16%;
+    }
+
+    .box-icon-html, .box-icon-css, .box-icon-css, .box-icon-js, .box-icon-reactjs {
+        width: 25%;
+    }
+
+    /* Habilidades */
+    .ability {
+        padding-top: 10%;
+    }
+
+    .dic-html, .dic-css, .dic-js, .dic-reactjs, .dic-boost, .dic-git {
+        padding: 0;
+    }
+
+    /* projeto */
+    .project-area {
+        margin: 11% 6%;
+        height: 28rem;
+        width: 23rem;
+    }
+
+    .navigation {
+        top: 365%;
+        padding: 0 17%;
+    }
+
+    .bar {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* contato*/
+    .container-contact {
+        padding-top: 50%;
+    }
+
+    .icons-contact {
+        font-size: 3rem;
+    }
+
+    .bloco1, .bloco2, .bloco3 {
+        width: 20%;
+    }
+
+    .box-curriculum .curriculum {
+        margin: 20% 30%;
+    }
+
+    /* footer*/
+    .footer-end h3 {
+        font-size: 1rem;
+    }
+}
+    /* Menu */
+    nav .menu-option ul {
+        padding: 10%;
+        margin: 7px 20%;
+    }
+
+    /* sessão */
+    .image {
+        width: 18rem;
+        height: 23rem;
+    }
+
+    article {
+        padding-top: 125%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    /* sobre */
+    section .talking-about p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 7rem 2rem 3rem 2rem;
+    }
+
+    .tech-icon .fa-brands {
+        font-size: 3.8rem;
+    }
+
+    /* habilidade */
+    .dic-html, .dic-css, .dic-js, .dic-reactjs, .dic-boost, .dic-git {
+        padding: 0;
+    }
+
+    /* projeto */
+    .project-area {
+        margin: 25% 8%;
+        height: 29rem;
+        width: 19rem;
+    }
+
+    .navigation {
+        top: 363%;
+        padding: 0 0 0 2%;
+    }
+
+    .bar {
+        width: 2.7rem;
+        height: 2.6rem;
+    }
+
+    .description-project {
+        font-size: 1rem;
+    }
+    /* mexer na descrição de projeto */
+
+    /* contato */
+    .container-contact {
+        padding-top: 55%;
+    }
+
+    .icons-contact {
+        font-size: 4rem;
+    }
